@@ -1,5 +1,6 @@
 [
 	{
+		"id": 1,
 		"title": "1989 (Delux Edition)",
 		"artist": "Taylor Swift",
 		"thumbnail": "https://i.imgur.com/JxSd3JB.jpg",
@@ -8,6 +9,7 @@
 	},
 
 	{
+		"id": 2,
 		"title": "RED",
 		"artist": "Taylor Swift",
 		"thumbnail": "https://i.imgur.com/JxSd3JB.jpg",
@@ -16,6 +18,7 @@
 	},
 
 	{
+		"id": 3,
 		"title": "Fearless",
 		"artist": "Taylor Swift",
 		"thumbnail": "https://i.imgur.com/JxSd3JB.jpg",
@@ -24,6 +27,7 @@
 	},
 
 	{
+		"id": 4,
 		"title": "1989 (Delux Edition)",
 		"artist": "Taylor Swift",
 		"thumbnail": "https://i.imgur.com/JxSd3JB.jpg",
@@ -32,6 +36,7 @@
 	},
 
 	{
+		"id": 5,
 		"title": "RED",
 		"artist": "Taylor Swift",
 		"thumbnail": "https://i.imgur.com/JxSd3JB.jpg",
@@ -40,6 +45,7 @@
 	},
 
 	{
+		"id": 6,
 		"title": "Fearless",
 		"artist": "Taylor Swift",
 		"thumbnail": "https://i.imgur.com/JxSd3JB.jpg",
