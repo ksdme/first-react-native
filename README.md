@@ -2,6 +2,9 @@ This project was bootstrapped with [Create React Native App](https://github.com/
 
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
 
+This basically is my realisation of the app built during The Complete React Native and Redux Course.
+![Screenshot 1](https://github.com/ksdme/first-react-native/raw/master/misc/shots/3.png)
+
 ## Table of Contents
 
 * [Updating to New Releases](#updating-to-new-releases)
