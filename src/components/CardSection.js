@@ -12,8 +12,12 @@ import { StyleSheet, View, } from "react-native";
 const CardSection = (props) => {
     const { cardSectionStyle, } = styles;
 
+    // provide an overrideable style
+    let style = props.style?props.style:{};
+    style = StyleSheet.flatten([cardSectionStyle, style,]);
+
     return (
-        <View style={cardSectionStyle}>
+        <View style={style}>
             {props.children}
         </View>
     );
@@ -21,7 +25,9 @@ const CardSection = (props) => {
 
 const styles = StyleSheet.create({
     cardSectionStyle: {
-
+        padding: 10,
+        borderColor: '#F8F8F8',
+        borderBottomWidth: 1,
     },
 });
 

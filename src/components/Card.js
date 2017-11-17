@@ -13,8 +13,8 @@ const Card = (props) => {
 	const { cardContainer, } = styles;
 
 	// provide an overrideable style
-	var style = props.style?props.style:{};
-	style = StyleSheet.flatten(cardContainer, style);
+	let style = props.style?props.style:{};
+	style = StyleSheet.flatten([cardContainer, style,]);
 
 	return (
 		<View style={style}>
@@ -25,9 +25,9 @@ const Card = (props) => {
 
 const styles = StyleSheet.create({
 	cardContainer: {
-		marginTop: 10,
-		marginLeft: 5,
-		marginRight: 5,
+		marginTop: 15,
+		marginLeft: 10,
+		marginRight: 10,
 		shadowColor: '#000000',
 		shadowOffset: {
 			width: 0,
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
 		},
 		shadowOpacity: 0.2,
 		shadowRadius: 2,
+		elevation: 1,
 		borderRadius: 2,
 	},
 });

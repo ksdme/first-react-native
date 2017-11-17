@@ -6,31 +6,35 @@
 	Stateful Component
 */
 import React from "react";
-import { StyleSheet, Image, Text, View, } from "react-native";
+import { StyleSheet, ScrollView, } from "react-native";
+import axios from "axios";
 
-import Card from "./Card";
-import CardSection from "./CardSection";
+import Album from "./Album";
 
 export default class AppContent extends React.Component {
-    getInitialState() {
-        return {};
+    constructor() {
+        super();
+
+        this.state = {
+            albums: [],
+        };
     }
 
     componentWillMount() {
-
-    }
-
-    _makeAlbumCard(album) {
-
+        axios.get("https://raw.githubusercontent.com/ksdme/first-react-native/master/data/sample.json")
+            .then(response => {
+                let dataResponse = response.data;
+                this.setState({ albums: dataResponse, });
+            });
     }
 
     render() {
         const { contentContainerStyle, } = styles;
 
         return (
-            <View style={contentContainerStyle}>
-                {}
-            </View>
+            <ScrollView style={contentContainerStyle}>
+                {this.state.albums.map((album) => <Album key={album.id} album={album}/>)}
+            </ScrollView>
         );   
     }
 }
@@ -38,5 +42,5 @@ export default class AppContent extends React.Component {
 const styles = StyleSheet.create({
     contentContainerStyle: {
 
-    }
+    },
 });
